@@ -1,0 +1,16 @@
+key.request: source.request.editor.open.interface
+key.name: "$REQUEST_NAME"
+key.compilerargs:
+    - "-target"
+    - "$LLVM_TARGET_TRIPLE"
+    - "-sdk"
+    - "$SDK_PATH"
+    - "-I"
+    - "$IMPORT_SEARCH_PATH"
+    - "-F"
+    - "$FRAMEWORK_SEARCH_PATH"
+    - ""
+key.modulename: "Security.SecItem"
+key.toolchains:
+    - "com.apple.dt.toolchain.XcodeDefault"
+key.synthesizedextensions: 1

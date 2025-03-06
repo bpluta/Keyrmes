@@ -1,0 +1,29 @@
+{
+  "configurations" : [
+    {
+      "id" : "516B8B22-2989-4C06-B0A9-6E6BBFEA0D8F",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "targetForVariableExpansion" : {
+      "containerPath" : "container:KeyrmesExampleProject.xcodeproj",
+      "identifier" : "CCD75AD22D52B49C007CCCA3",
+      "name" : "KeyrmesExampleProject"
+    }
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : false,
+      "target" : {
+        "containerPath" : "container:KeyrmesExampleProject.xcodeproj",
+        "identifier" : "CCD75AE22D52B49E007CCCA3",
+        "name" : "KeyrmesExampleProjectTests"
+      }
+    }
+  ],
+  "version" : 1
+}

@@ -1,0 +1,4 @@
+module SourceKitTypes [system] {
+  header "SourceKitTypes.h"
+  export *
+}
