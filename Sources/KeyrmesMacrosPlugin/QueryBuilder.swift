@@ -12,7 +12,7 @@ import SwiftSyntaxMacros
 
 package enum QueryBuilder: MemberMacro {
     
-    static package func expansion(of node: AttributeSyntax, providingMembersOf declaration: some DeclGroupSyntax, in context: some MacroExpansionContext) throws -> [DeclSyntax] {
+    static package func expansion(of node: AttributeSyntax, providingMembersOf declaration: some DeclGroupSyntax, conformingTo protocols: [TypeSyntax], in context: some MacroExpansionContext) throws -> [DeclSyntax] {
         let queryAttributeNames = getQuerySettableNames(from: declaration)
         let queryDeclaration = CodeBlockItemSyntax.Item(getQueryDeclaration())
         let assignments = queryAttributeNames.map { item in

@@ -1,4 +1,4 @@
-// swift-tools-version: 6.0
+// swift-tools-version: 6.3
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -22,7 +22,7 @@ let package = Package(
         .plugin(name: "KeychainConstantsExtractor", targets: ["KeychainConstantsExtractor"])
     ],
     dependencies: [
-        .package(url: "https://github.com/apple/swift-syntax.git", from: "600.0.0"),
+        .package(url: "https://github.com/swiftlang/swift-syntax.git", from: "603.0.0"),
     ],
     targets: [
         .target(
@@ -36,10 +36,10 @@ let package = Package(
         ),
         .target(
             name: "KeyrmesMacros",
-            dependencies: ["Macros"]
+            dependencies: ["KeyrmesMacrosPlugin"]
         ),
         .macro(
-            name: "Macros",
+            name: "KeyrmesMacrosPlugin",
             dependencies: [
                 .product(name: "SwiftSyntaxMacros", package: "swift-syntax"),
                 .product(name: "SwiftCompilerPlugin", package: "swift-syntax"),

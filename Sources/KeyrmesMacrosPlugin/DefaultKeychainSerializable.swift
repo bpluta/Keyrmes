@@ -12,12 +12,10 @@ import SwiftSyntaxMacros
 
 package enum DefaultKeychainSerializable: MemberMacro {
     
-    static package func expansion(of node: AttributeSyntax, providingMembersOf declaration: some DeclGroupSyntax, in context: some MacroExpansionContext) throws -> [DeclSyntax] {
-        return [
-            DeclSyntax(encodeFunction),
-            DeclSyntax(decodeFunction)
-        ]
-    }
+    static package func expansion(of node: AttributeSyntax, providingMembersOf declaration: some DeclGroupSyntax, conformingTo protocols: [TypeSyntax], in context: some MacroExpansionContext) throws -> [DeclSyntax] {[
+        DeclSyntax(encodeFunction),
+        DeclSyntax(decodeFunction)
+    ]}
     
     private static var encodeFunction: FunctionDeclSyntax {
         FunctionDeclSyntax(

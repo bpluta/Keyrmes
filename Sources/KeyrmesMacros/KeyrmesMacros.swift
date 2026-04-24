@@ -6,10 +6,10 @@
 //
 
 @attached(peer, names: arbitrary)
-package macro QuerySettable(_ customKey: String = "") = #externalMacro(module: "Macros", type: "QuerySettable")
+package macro QuerySettable(_ customKey: String = "") = #externalMacro(module: "KeyrmesMacrosPlugin", type: "QuerySettable")
 
 @attached(member, names: arbitrary)
-package macro QueryBuilder() = #externalMacro(module: "Macros", type: "QueryBuilder")
+package macro QueryBuilder() = #externalMacro(module: "KeyrmesMacrosPlugin", type: "QueryBuilder")
 
 @attached(member, names: arbitrary)
-package macro DefaultKeychainSerializable() = #externalMacro(module: "Macros", type: "DefaultKeychainSerializable")
+package macro DefaultKeychainSerializable() = #externalMacro(module: "KeyrmesMacrosPlugin", type: "DefaultKeychainSerializable")

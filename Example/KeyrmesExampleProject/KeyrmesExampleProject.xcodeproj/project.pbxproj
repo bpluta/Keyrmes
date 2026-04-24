@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CCD75B082D52B578007CCCA3 /* Keyrmes in Frameworks */ = {isa = PBXBuildFile; productRef = CCD75B072D52B578007CCCA3 /* Keyrmes */; };
+		CC0542A32F9AC003002003C9 /* Keyrmes in Frameworks */ = {isa = PBXBuildFile; productRef = CC0542A22F9AC003002003C9 /* Keyrmes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,19 +51,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCD75B082D52B578007CCCA3 /* Keyrmes in Frameworks */,
+				CC0542A32F9AC003002003C9 /* Keyrmes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CC0542A12F9AC003002003C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CCD75ACA2D52B49C007CCCA3 = {
 			isa = PBXGroup;
 			children = (
 				CC3A1A162D52B5C300208585 /* KeyrmesExampleProject.xctestplan */,
 				CCD75AD52D52B49C007CCCA3 /* KeyrmesExampleProject */,
 				CCD75AE62D52B49E007CCCA3 /* KeyrmesExampleProjectTests */,
+				CC0542A12F9AC003002003C9 /* Frameworks */,
 				CCD75AD42D52B49C007CCCA3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -120,7 +128,7 @@
 			);
 			name = KeyrmesExampleProjectTests;
 			packageProductDependencies = (
-				CCD75B072D52B578007CCCA3 /* Keyrmes */,
+				CC0542A22F9AC003002003C9 /* Keyrmes */,
 			);
 			productName = KeyrmesExampleProjectTests;
 			productReference = CCD75AE32D52B49E007CCCA3 /* KeyrmesExampleProjectTests.xctest */;
@@ -466,8 +474,9 @@
 /* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CCD75B072D52B578007CCCA3 /* Keyrmes */ = {
+		CC0542A22F9AC003002003C9 /* Keyrmes */ = {
 			isa = XCSwiftPackageProductDependency;
+			package = CCD75B062D52B578007CCCA3 /* XCLocalSwiftPackageReference "../../../Keyrmes" */;
 			productName = Keyrmes;
 		};
 /* End XCSwiftPackageProductDependency section */
