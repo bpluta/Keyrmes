@@ -56,7 +56,7 @@ Due to limitations in Swift compiler build plugins, compilation of the `Keychain
 ```
 make keychain_keys_builder
 ```
-This command compiles the `KeychainKeysBuilder` package into a binary and places it directly into the artifact bundle directory
+This command compiles the `KeychainKeysBuilder` package and copies both the executable and its generated resource bundle into the artifact bundle directory. Keep `KeychainKeysBuilder_KeychainKeysBuilder.bundle` beside the executable; it contains the `SourceKitRequest.yml` template required at runtime.
 
 ## Usage
 
